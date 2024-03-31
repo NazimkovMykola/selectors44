@@ -1,0 +1,40 @@
+.new_title {
+    position: relative;
+    padding-left: 50px;
+}
+/* псевдоелемент */
+.new_title::before {
+    content: 'NEW';
+    color: antiquewhite;
+    background-color: red;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top:0;
+    left: 22px;
+}
+p::first-letter {
+    content: 'L';
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder {
+color: rgb(197, 195, 195);
+padding-left: 6px;
+}
+/* псевдокласи */
+@media screen and (max-width: 900px) {
+    h1:hover, span:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+}
+li:nth-child(even) {
+    color: blue;
+}
+
+tr:nth-child(odd) {
+    background-color: grey;
+}
